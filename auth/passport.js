@@ -15,7 +15,7 @@ module.exports = () => {
 //memory and concerted to something like a json object so the app can
 // do something with the data. e.g. get the user;s email or first name
 
-passport.deserializeUser(id, done) => {
+passport.deserializeUser((id, done) => {
   models.User.findById(id)
   .then((user) => { done(null, user); })
   .catch((err) => {done(err, null); });
