@@ -10,7 +10,7 @@ function comparePass(userPassword, databasePassword) {
 // this will redirect a logged in user to their user profile
 // page if they're already loggin in.
 function loginRedirect(req, res, next) {
-  if(req.user) return res.status(401).json(
+  if (req.user) return res.status(401).json(
     { status: 'You are already logged in' }
   );
     return next();
@@ -19,7 +19,7 @@ function loginRedirect(req, res, next) {
 // allows users to register
 function createUser(req, res) {
   const salt = bcrypt.genSaltSync();
-  const hash = bcrypt.hashSync(re.body.password, salt);
+  const hash = bcrypt.hashSync(req.body.password, salt);
 
   return models.User.create({
     username: req.body.username,

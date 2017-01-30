@@ -9,7 +9,8 @@ const passport = require('passport');
 
 const index = require('./routes/index');
 const authRoutes = require('./routes/auth.js');
-const userRoutes = require('./routes/user.js')
+const userRoutes = require('./routes/user.js');
+const app = express();
 // add new modules and files here
 
 // load environment variables
@@ -29,7 +30,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // add new express-session and passport middleware here
 // tells express to use our express-session and passport middlewares
-app.user(session({
+app.use(session({
   secret: process.env.SECRET_KEY,
   resave: false,
   saveUninitialized: true

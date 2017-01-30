@@ -1,14 +1,12 @@
 <% include ../partials/head.ejs %>
   <body>
-    <% include ../partials/header.ejs %>
     <main>
-      <div class="container">
-        <p>Hello, this is the user profile page!</p>
+      <div class="userlist">
         <p><%= user.firstName %></p>
         <p><%= user.lastName %></p>
         <p><%= user.email %></p>
         <p><%= user.dob %></p>
-        <a href="/auth/logout">LOG OUT</a>
+        <a href="/auth/logout" class="waves-effect waves-light btn">LOG OUT</a>
       </div>
     </main>
     <% include ../partials/footer.ejs %>

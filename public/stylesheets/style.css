@@ -1,21 +1,38 @@
-header {
-  background-color: teal;
+body{
+  background: url(http://wallpaperwarrior.com/wp-content/uploads/2016/09/Wallpaper-16.jpg);
+  position: fixed;
+  background-size: cover;
   color: white;
 }
 
-header .container h1 {
-  font-size: 36px;
+.homepage{
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
 }
 
-main{
-  flex: 1 0 auto;
+.hcontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
-footer {
-  background-color: teal;
+.userlist{
+  font-size: 30px;
+  text-align: center;
+
+}
+
+.login{
+  font-size: 30px;
+  text-align: center;
   color: white;
 }
 
-a {
-  color: #00B7FF;
+.register{
+  overflow: scroll;
 }

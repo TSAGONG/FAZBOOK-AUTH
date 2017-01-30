@@ -1,5 +1,5 @@
 const passport = require('passport');
-const models = require('..db/models/index');
+const models = require('../db/models/index');
 
 
 //Serialize user--> a process whereby we take the user info in the
@@ -18,7 +18,7 @@ module.exports = () => {
 passport.deserializeUser((id, done) => {
   models.User.findById(id)
   .then((user) => { done(null, user); })
-  .catch((err) => {done(err, null); });
+  .catch((err) => { done(err, null); });
 });
 
 };

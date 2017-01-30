@@ -7,7 +7,7 @@ const init = require('./passport');
 const models = require('../db/models/index');
 const authHelpers = require('../auth/auth-helpers');
 
-const options ={};
+const options = {};
 
 init();
 

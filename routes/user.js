@@ -6,7 +6,7 @@ const authHelpers = require('../auth/auth-helpers');
 /* GET user profile page. */
 // add route here
 router.get('/', authHelpers.loginRequired, (req, res, next) => {
-  res.render('usr/index', {
+  res.render('user/index', {
     user: req.user.dataValues
   });
 });

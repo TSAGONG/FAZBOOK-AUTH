@@ -3,3 +3,39 @@ LOG:  MultiXact member wraparound protections are now enabled
 LOG:  database system is ready to accept connections
 LOG:  autovacuum launcher started
 FATAL:  database "database_development" does not exist
+ERROR:  relation "Users" does not exist at character 13
+STATEMENT:  INSERT INTO "Users" ("id","username","password","email","firstName","lastName","dob","createdAt","updatedAt") VALUES (DEFAULT,'tsagong','$2a$10$w2Sw9iQTDRGdnTQ9jhd7Be5y7ftnLQnPuA.n1woSkOTxihfXf5fee','TSAGONG@GMAIL.COM','TENZIN','TSAGONG','2017-01-27 00:00:00.000 +00:00','2017-01-29 19:12:49.409 +00:00','2017-01-29 19:12:49.409 +00:00') RETURNING *;
+ERROR:  relation "Users" does not exist at character 13
+STATEMENT:  INSERT INTO "Users" ("id","username","password","email","firstName","lastName","dob","createdAt","updatedAt") VALUES (DEFAULT,'tsagong','$2a$10$9WWFr7/8rFqbWP6eiWbkNe8VtlmUi0gY9rqPOk.miPhx1Cb4ugabe','TSAGONG@GMAIL.COM','TENZIN','TSAGONG','2017-01-27 00:00:00.000 +00:00','2017-01-29 19:12:55.885 +00:00','2017-01-29 19:12:55.885 +00:00') RETURNING *;
+ERROR:  relation "Users" does not exist at character 109
+STATEMENT:  SELECT "id", "username", "password", "email", "firstName", "lastName", "dob", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."username" = 'tsagong';
+ERROR:  relation "Users" does not exist at character 13
+STATEMENT:  INSERT INTO "Users" ("id","username","password","email","firstName","lastName","dob","createdAt","updatedAt") VALUES (DEFAULT,'tsagong','$2a$10$D1VUxlC9zujAzM7uLg38VeIvdFKfE0UmqGlrMfNCSQ4dbfFYFMhZe','TSAGONG@GMAIL.COM','TENZIN','TSAGONG','2017-01-04 00:00:00.000 +00:00','2017-01-29 19:14:52.410 +00:00','2017-01-29 19:14:52.410 +00:00') RETURNING *;
+ERROR:  relation "Users" does not exist at character 109
+STATEMENT:  SELECT "id", "username", "password", "email", "firstName", "lastName", "dob", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."username" = 'tsagong';
+ERROR:  relation "Users" does not exist at character 109
+STATEMENT:  SELECT "id", "username", "password", "email", "firstName", "lastName", "dob", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."username" = 'tsagong';
+ERROR:  relation "Users" does not exist at character 13
+STATEMENT:  INSERT INTO "Users" ("id","username","password","email","firstName","lastName","dob","createdAt","updatedAt") VALUES (DEFAULT,'hello','$2a$10$hG8S5qFmCguphXVzOSC8Qeyx67h4EC76MrIqmF7HyUlDAmY9dhPNC','world@gmail.com','hello','world','2017-01-10 00:00:00.000 +00:00','2017-01-29 19:19:52.924 +00:00','2017-01-29 19:19:52.924 +00:00') RETURNING *;
+ERROR:  relation "Users" does not exist at character 13
+STATEMENT:  INSERT INTO "Users" ("id","username","password","email","firstName","lastName","dob","createdAt","updatedAt") VALUES (DEFAULT,'tsagong','$2a$10$tXa9nerxQXBZKdExQt.9T.KbOUIirswxd4R9hs/9J1d5.wU3zuxMy','TSAGONG@GMAIL.COM','TENZIN','TSAGONG','2017-02-02 00:00:00.000 +00:00','2017-01-29 19:31:58.490 +00:00','2017-01-29 19:31:58.490 +00:00') RETURNING *;
+ERROR:  relation "Users" does not exist at character 13
+STATEMENT:  INSERT INTO "Users" ("id","username","password","email","firstName","lastName","dob","createdAt","updatedAt") VALUES (DEFAULT,'tsagong','$2a$10$RYqFCzgbLwKFe4GC8Su/EOPu7Fzo0nWgDfZ5e/DXKEqCE.kJF0bDS','TSAGONG@GMAIL.COM','TENZIN','TSAGONG','2017-02-02 00:00:00.000 +00:00','2017-01-29 19:33:31.873 +00:00','2017-01-29 19:33:31.873 +00:00') RETURNING *;
+ERROR:  relation "Users" does not exist at character 109
+STATEMENT:  SELECT "id", "username", "password", "email", "firstName", "lastName", "dob", "createdAt", "updatedAt" FROM "Users" AS "User" WHERE "User"."username" = 'tsagong';
+ERROR:  relation "Users" does not exist at character 13
+STATEMENT:  INSERT INTO "Users" ("id","username","password","email","firstName","lastName","dob","createdAt","updatedAt") VALUES (DEFAULT,'dsfasdf','$2a$10$XDZFUdwswGw5.WlsXHm4fO5kAjzZkXi4pWquP8ORc19yD3e1F1R/O','sdfsdfsd','dsfsdf','sdfsdfsd','Invalid date','2017-01-29 19:34:32.527 +00:00','2017-01-29 19:34:32.527 +00:00') RETURNING *;
+ERROR:  syntax error at or near "]" at character 1
+STATEMENT:  ]l
+	SELECT * FROM users
+	l
+	;
+ERROR:  relation "users" does not exist at character 15
+STATEMENT:  SELECT * FROM users;
+ERROR:  relation "users" does not exist at character 15
+STATEMENT:  SELECT * FROM Users;
+FATAL:  database "users" does not exist
+ERROR:  invalid input syntax for type timestamp with time zone: "Invalid date" at character 203
+STATEMENT:  INSERT INTO "Users" ("id","username","password","email","firstName","lastName","dob","createdAt","updatedAt") VALUES (DEFAULT,'t','$2a$10$1DeRO7CdnLyPtUFWuAGba.TMGvQ/b5xUWtC/.vLYRQTGXEge.ayx6','','','','Invalid date','2017-01-30 01:59:12.044 +00:00','2017-01-30 01:59:12.044 +00:00') RETURNING *;
+ERROR:  invalid input syntax for type timestamp with time zone: "Invalid date" at character 202
+STATEMENT:  INSERT INTO "Users" ("id","username","password","email","firstName","lastName","dob","createdAt","updatedAt") VALUES (DEFAULT,'','$2a$10$TAeVE2p.1kZMKpxaSbySJe/HNXRaXVSyl.lLnXdGL4hx3CtB0h9zK','','','','Invalid date','2017-01-30 02:21:01.553 +00:00','2017-01-30 02:21:01.553 +00:00') RETURNING *;
